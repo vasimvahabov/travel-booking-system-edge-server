@@ -119,3 +119,18 @@ resilience4j:
     configs:
       default:
         timeout-duration: 5s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState, redis

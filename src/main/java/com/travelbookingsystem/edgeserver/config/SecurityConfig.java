@@ -43,6 +43,7 @@ public class SecurityConfig {
                         .pathMatchers("/", "/*.css", "/*.js", "/favicon.ico")
                         .permitAll()
                         .pathMatchers(HttpMethod.GET, "/flight-service/flights").permitAll()
+                        .pathMatchers("/actuator/**").permitAll()
                         .anyExchange().authenticated())
                 .exceptionHandling(exceptionHandling ->
                         exceptionHandling.authenticationEntryPoint(
