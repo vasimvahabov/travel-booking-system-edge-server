@@ -99,7 +99,7 @@ server:
     idle-timeout: 15s
     connection-timeout: 2s
   shutdown: graceful
-  port: 6677
+  port: 8003
 
 logging:
   level:
