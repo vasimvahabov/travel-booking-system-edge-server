@@ -38,6 +38,9 @@ dependencies {
     compileOnly "org.mapstruct:mapstruct:${mapstructVersion}"
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
 
+    runtimeOnly 'io.github.resilience4j:resilience4j-micrometer'
+    runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
 
