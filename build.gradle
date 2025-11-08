@@ -24,6 +24,7 @@ ext {
     set('testcontainersVersion', "1.21.3")
     set('lombokVersion', "1.18.38")
     set('mapstructVersion', "1.6.3")
+    set('otelVersion', "2.21.0")
 }
 
 dependencies {
@@ -40,6 +41,7 @@ dependencies {
 
     runtimeOnly 'io.github.resilience4j:resilience4j-micrometer'
     runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+    runtimeOnly "io.opentelemetry.javaagent:opentelemetry-javaagent:${otelVersion}"
 
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"

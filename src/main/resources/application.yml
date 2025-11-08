@@ -106,6 +106,9 @@ logging:
     io.github.resilience4j: DEBUG
     org.springframework.security: DEBUG
     com.travelbookingsystem.edgeserver.config: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name}, %X{trace_id}, %X{span_id}]"
+
 
 resilience4j:
   circuitbreaker:
