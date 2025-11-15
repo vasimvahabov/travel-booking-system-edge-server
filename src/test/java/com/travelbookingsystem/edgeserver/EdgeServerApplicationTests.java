@@ -24,7 +24,7 @@ import java.time.Duration;
 class EdgeServerApplicationTests {
 
     static final int REDIS_PORT = 6379;
-    static final int KEYCLOAK_PORT = 4455;
+    static final int KEYCLOAK_PORT = 8080;
 
     @Container
     static GenericContainer<?> redisContainer =
